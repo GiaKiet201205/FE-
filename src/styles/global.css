@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+
+html,
+body,
+#root,
+button,
+input,
+textarea,
+select {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+  color: #16324f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.hero {
+  padding: 80px 0 100px;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0,91,170,.12), transparent 32%),
+    linear-gradient(135deg, #f8fbff 0%, #eaf4ff 100%);
+}
+
+.hero h1,
+.hero p,
+.hero span,
+.hero div {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.hero-accent { color: #005baa; }
+
+.hero-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 20px 60px rgba(24, 72, 120, .12);
+}
+
+.hero-mini-card {
+  padding: 18px;
+  border: 1px solid #e7edf4;
+  border-radius: 14px;
+  font-weight: 600;
+  background: #fbfdff;
+}
+
+.stat-card {
+  padding: 24px;
+  border: 1px solid #e5ebf2;
+  border-radius: 16px !important;
+  background: #fff;
+}
+
+.course-card {
+  height: 100%;
+  border-radius: 18px !important;
+  overflow: hidden;
+  border: 1px solid #e7edf4;
+  box-shadow: 0 8px 30px rgba(27, 62, 92, .06) !important;
+}
+
+.course-image {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #005baa, #2b84c6);
+  color: #fff;
+}
+
+.feature-box {
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  padding: 24px;
+  border-radius: 16px;
+  min-height: 150px;
+}
+
+.admin-action {
+  border: 1px solid #dce6ef;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-weight: 600;
+  background: #fbfdff;
+}

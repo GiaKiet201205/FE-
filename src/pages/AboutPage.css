@@ -1,0 +1,138 @@
+.about-page {
+  width: 100%;
+}
+
+/* =========================
+   GIỚI THIỆU
+========================= */
+
+.about-introduction {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 0;
+}
+
+.about-intro-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a2b4c;
+  margin-bottom: 40px;
+}
+
+.about-intro-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.about-intro-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-intro-content {
+  flex: 1;
+}
+
+.about-intro-content p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-intro-image {
+  position: relative;
+  flex: 1;
+}
+
+.about-intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-intro-image-bg {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+  background: #1a3c7c;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.about-intro-row.reverse .about-intro-image-bg {
+  right: auto;
+  left: -15px;
+}
+
+.about-detail-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.about-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a3c7c;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about-detail-btn:hover {
+  background: #142f61;
+}
+
+.about-detail-btn span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* =========================
+   VISION + MISSION
+========================= */
+
+.vision-mission-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .about-intro-row,
+  .about-intro-row.reverse {
+    flex-direction: column;
+  }
+
+  .about-intro-image-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-mission-section {
+    grid-template-columns: 1fr;
+  }
+}

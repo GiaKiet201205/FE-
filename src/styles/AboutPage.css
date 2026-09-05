@@ -1,0 +1,844 @@
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO BANNER
+========================================================= */
+
+.about-hero {
+  position: relative;
+
+  width: 100%;
+  height: 430px;
+
+  overflow: hidden;
+
+  background: #082d63;
+}
+
+
+/* =========================================================
+   BACKGROUND IMAGE
+========================================================= */
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+
+  z-index: 0;
+}
+
+.about-hero-bg img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center 35%;
+
+  transform: scale(1.02);
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.about-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 28, 78, 0.98) 0%,
+      rgba(7, 45, 96, 0.90) 25%,
+      rgba(12, 65, 125, 0.65) 48%,
+      rgba(8, 44, 94, 0.25) 75%,
+      rgba(4, 35, 78, 0.08) 100%
+    );
+}
+
+
+/* =========================================================
+   HÌNH HỌC BÊN TRÁI
+========================================================= */
+
+.hero-shape {
+  position: absolute;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  transform: skewX(-27deg);
+}
+
+
+.hero-shape-1 {
+  top: -80px;
+  left: -180px;
+
+  width: 530px;
+  height: 620px;
+
+  background: rgba(2, 24, 72, 0.72);
+}
+
+
+.hero-shape-2 {
+  top: -100px;
+  left: 75px;
+
+  width: 180px;
+  height: 650px;
+
+  background: rgba(0, 126, 196, 0.34);
+}
+
+
+.hero-shape-3 {
+  top: -100px;
+  left: 270px;
+
+  width: 110px;
+  height: 650px;
+
+  background: rgba(44, 98, 173, 0.28);
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.about-hero-container {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+  max-width: 1250px;
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.about-hero-content {
+  width: 600px;
+
+  margin-top: 15px;
+
+  animation: heroContentIn 0.8s ease-out both;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.about-hero-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 17px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 14px;
+}
+
+.about-hero-breadcrumb span:first-child {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.breadcrumb-arrow {
+  color: #f6b51b;
+
+  font-size: 21px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.about-hero-content h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 58px;
+
+  font-weight: 700;
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+
+  text-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   YELLOW LINE
+========================================================= */
+
+.about-hero-line {
+  width: 65px;
+  height: 5px;
+
+  margin-top: 20px;
+
+  background: #f6b51b;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.about-hero-content p {
+  margin: 18px 0 0;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 17px;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   RIGHT DECORATION
+========================================================= */
+
+.about-hero-corner {
+  position: absolute;
+
+  z-index: 3;
+
+  right: -90px;
+  bottom: -110px;
+
+  width: 430px;
+  height: 230px;
+
+  background: rgba(0, 139, 210, 0.45);
+
+  transform: skewX(-30deg);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes heroContentIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   GIỚI THIỆU CHUNG
+========================================================= */
+
+.about-introduction {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  padding: 55px 30px 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-intro-title {
+  margin: 0 0 65px;
+
+  text-align: center;
+
+  color: #1c3155;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.5px;
+}
+
+.about-intro-title::after {
+  content: "";
+
+  display: block;
+
+  width: 50px;
+  height: 4px;
+
+  margin: 16px auto 0;
+
+  background: #f6b51b;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.about-intro-row {
+  display: flex;
+  align-items: center;
+
+  gap: 65px;
+
+  margin-bottom: 110px;
+}
+
+.about-intro-row.reverse {
+  flex-direction: row;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.about-intro-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.about-intro-content p {
+  margin: 0 0 22px;
+
+  color: #5c626b;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  font-weight: 400;
+
+  text-align: justify;
+}
+
+.about-intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.about-intro-image {
+  position: relative;
+
+  flex: 1;
+
+  min-width: 0;
+
+  height: 365px;
+
+  /*
+    Chừa khoảng để mảng xanh
+    phía sau lộ ra
+  */
+  padding-right: 14px;
+  padding-bottom: 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BLUE BACKGROUND
+========================================================= */
+
+.about-intro-image-bg {
+  position: absolute;
+
+  z-index: 1;
+
+  right: 0;
+  bottom: 0;
+
+  width: 96%;
+  height: 94%;
+
+  background: #164581;
+
+  /*
+    Hình xéo mạnh hơn
+  */
+  clip-path: polygon(
+    5% 0,
+    100% 0,
+    100% 87%,
+    92% 100%,
+    8% 100%,
+    0 88%
+  );
+
+  transition: transform 0.35s ease;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.about-intro-image img {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /*
+    Không dùng rotate nữa.
+
+    Tạo form xéo trực tiếp bằng clip-path.
+  */
+  clip-path: polygon(
+    5% 0,
+    100% 0,
+    100% 86%,
+    95% 100%,
+    0 100%,
+    0 13%
+  );
+
+  /*
+    Bo góc trên trái
+  */
+  border-radius: 65px 5px 0 0;
+
+  box-shadow:
+    0 10px 30px rgba(20, 50, 90, 0.12);
+
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.about-intro-image:hover img {
+  transform: scale(1.015);
+
+  filter: brightness(1.02);
+}
+
+.about-intro-image:hover .about-intro-image-bg {
+  transform: translate(4px, 4px);
+}
+
+
+/* =========================================================
+   HÀNG 2
+   ĐẢO CHIỀU
+========================================================= */
+
+.about-intro-row.reverse .about-intro-image {
+  padding-right: 0;
+  padding-left: 14px;
+}
+
+
+/*
+   Mảng xanh chuyển sang bên trái
+*/
+
+.about-intro-row.reverse .about-intro-image-bg {
+  right: auto;
+  left: 0;
+
+  clip-path: polygon(
+    0 0,
+    95% 0,
+    100% 12%,
+    100% 88%,
+    92% 100%,
+    8% 100%,
+    0 87%
+  );
+}
+
+
+/*
+   Ảnh hàng 2 xéo ngược hướng
+*/
+
+.about-intro-row.reverse .about-intro-image img {
+  clip-path: polygon(
+    0 0,
+    95% 0,
+    100% 14%,
+    100% 100%,
+    5% 100%,
+    0 87%
+  );
+
+  border-radius: 5px 65px 0 0;
+}
+
+.about-intro-row.reverse .about-intro-image:hover .about-intro-image-bg {
+  transform: translate(-4px, 4px);
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.about-detail-btn-wrapper {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: -20px;
+  margin-bottom: 70px;
+}
+
+.about-detail-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  min-width: 150px;
+
+  padding: 13px 25px;
+
+  color: #fff;
+
+  background: #164581;
+
+  border: 2px solid #164581;
+
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.about-detail-btn span {
+  font-size: 22px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.about-detail-btn:hover {
+  color: #164581;
+
+  background: #fff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(22, 69, 129, 0.15);
+}
+
+.about-detail-btn:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   VISION / MISSION / CORE VALUE
+========================================================= */
+
+.vision-mission-section {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 75px 30px 100px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .about-introduction {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .about-intro-row {
+    gap: 40px;
+  }
+
+  .about-intro-image {
+    height: 330px;
+  }
+
+  .about-intro-content p {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-intro-title {
+    font-size: 34px;
+  }
+
+  .vision-mission-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .about-introduction {
+    padding-top: 45px;
+  }
+
+  .about-intro-title {
+    font-size: 31px;
+
+    margin-bottom: 45px;
+  }
+
+
+  .about-intro-row,
+  .about-intro-row.reverse {
+
+    flex-direction: column;
+
+    gap: 35px;
+
+    margin-bottom: 75px;
+  }
+
+
+  .about-intro-content {
+    width: 100%;
+  }
+
+
+  .about-intro-content p {
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-align: left;
+  }
+
+
+  .about-intro-image,
+  .about-intro-row.reverse .about-intro-image {
+
+    width: 100%;
+
+    height: 320px;
+
+    padding-right: 10px;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+
+
+  .about-intro-row.reverse .about-intro-image {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+
+  .about-intro-image img,
+  .about-intro-row.reverse .about-intro-image img {
+
+    border-radius: 45px 5px 0 0;
+  }
+
+
+  .vision-mission-section {
+
+    grid-template-columns: 1fr;
+
+    padding-top: 60px;
+    padding-bottom: 70px;
+
+    gap: 25px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-introduction {
+    padding: 40px 18px 20px;
+  }
+
+
+  .about-intro-title {
+    font-size: 27px;
+
+    margin-bottom: 40px;
+  }
+
+
+  .about-intro-title::after {
+    width: 42px;
+    height: 3px;
+
+    margin-top: 12px;
+  }
+
+
+  .about-intro-row,
+  .about-intro-row.reverse {
+
+    gap: 28px;
+
+    margin-bottom: 60px;
+  }
+
+
+  .about-intro-content p {
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    margin-bottom: 18px;
+  }
+
+
+  .about-intro-image,
+  .about-intro-row.reverse .about-intro-image {
+
+    height: 255px;
+  }
+
+
+  .about-intro-image img,
+  .about-intro-row.reverse .about-intro-image img {
+
+    border-radius: 38px 5px 0 0;
+  }
+
+
+  .about-detail-btn {
+
+    min-width: 140px;
+
+    padding: 12px 20px;
+
+    font-size: 14px;
+  }
+
+
+  .vision-mission-section {
+
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

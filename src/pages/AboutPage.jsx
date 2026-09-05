@@ -8,11 +8,51 @@ import corevalueImage from "../assets/images/corevalues.png";
 import introductionImage from "../assets/images/introduction.jpg";
 import introductionImage2 from "../assets/images/introduction2.jpg";
 
-import "./AboutPage.css";
-
+import "../styles/AboutPage.css";
 function AboutPage() {
   return (
     <div className="about-page">
+
+      {/* =====================================================
+          HERO BANNER
+      ===================================================== */}
+      <section className="about-hero">
+
+        {/* Ảnh nền */}
+        <div className="about-hero-bg">
+          <img
+            src="/images/about-banner.jpg"
+            alt="IIG Việt Nam"
+          />
+        </div>
+
+        {/* Lớp phủ xanh */}
+        <div className="about-hero-overlay"></div>
+
+        {/* Các mảng hình học */}
+        <div className="hero-shape hero-shape-1"></div>
+        <div className="hero-shape hero-shape-2"></div>
+        <div className="hero-shape hero-shape-3"></div>
+
+        {/* Nội dung Hero */}
+        <div className="about-hero-container">
+          <div className="about-hero-content">
+
+            <h1>Giới thiệu</h1>
+
+            <div className="about-hero-line"></div>
+
+            <p>
+              Tổ chức Giáo dục IIG Việt Nam
+            </p>
+
+          </div>
+        </div>
+
+        {/* Góc trang trí */}
+        <div className="about-hero-corner"></div>
+
+      </section>
 
       {/* =========================
           PHẦN GIỚI THIỆU

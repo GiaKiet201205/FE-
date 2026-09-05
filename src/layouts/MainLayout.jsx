@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { AppBar, Toolbar, Button, Container, Box, Chip } from "@mui/material";
 import { SchoolOutlined } from "@mui/icons-material";
 import Footer from "../components/common/Footer";
@@ -7,7 +7,12 @@ import { useAuth } from "../auth/AuthContext";
 
 export default function MainLayout() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { user, logout } = useAuth();
+
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   const handleLogout = () => {
     logout();
@@ -68,7 +73,7 @@ export default function MainLayout() {
                 Lịch khai giảng
               </Button>
               <Button onClick={() => navigate("/about")}>Về IIG</Button>
-              <Button>Tin tức</Button>
+              <Button onClick={() => navigate("/news")}>Tin tức</Button>
             </Box>
 
             {user ? (

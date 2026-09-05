@@ -14,6 +14,8 @@ import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import AdminCoursesPage from "./pages/admin/AdminCoursesPage";
 import TeacherDashboardPage from "./pages/teacher/TeacherDashboardPage";
 import AboutPage from "./pages/AboutPage";
+import NewsPage from "./pages/NewsPage";
+import NewsDetailPage from "./pages/NewsDetailPage";
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/news/:id" element={<NewsDetailPage />} />
 
         {/* Student only */}
         <Route element={<ProtectedRoute allowedRoles={["STUDENT"]} />}>

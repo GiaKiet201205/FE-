@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import VisionMissionCard from "../components/about/VisionMissionCard";
 
@@ -8,12 +8,12 @@ import corevalueImage from "../assets/images/corevalues.png";
 import introductionImage from "../assets/images/introduction.jpg";
 import introductionImage2 from "../assets/images/introduction2.jpg";
 import bannerImage from "../assets/images/banner.jpg";
-import writeImage from "../assets/images/write.jpg";
-import advisoryImage from "../assets/images/advisory.jpg";
-import trainingImage from "../assets/images/training.jpg";
+import ActivitySection from "../components/about/ActivitySection";
 
 import "../styles/AboutPage.css";
+
 function AboutPage() {
+
   return (
     <div className="about-page">
       {/* =====================================================
@@ -116,6 +116,8 @@ function AboutPage() {
       {/* =========================
           TẦM NHÌN - SỨ MỆNH - GIÁ TRỊ
       ========================= */}
+
+      <h2 className="about-intro-title">Tầm Nhìn - Sứ Mệnh - Giá Trị</h2>
       <section className="vision-mission-section">
         <VisionMissionCard
           image={visionImage}
@@ -143,124 +145,7 @@ function AboutPage() {
         />
       </section>
 
-      {/* =====================================================
-    LĨNH VỰC HOẠT ĐỘNG
-===================================================== */}
-
-      <section className="activity-section">
-        {/* Background decorative lines */}
-        <div className="activity-decoration activity-decoration-1"></div>
-        <div className="activity-decoration activity-decoration-2"></div>
-        <div className="activity-decoration activity-decoration-3"></div>
-
-        <div className="activity-container">
-          {/* TITLE */}
-          <div className="activity-header">
-            <span className="activity-small-title">IIG VIỆT NAM</span>
-
-            <h2>Lĩnh vực hoạt động</h2>
-
-            <div className="activity-title-line"></div>
-          </div>
-
-          {/* CONTENT */}
-          <div className="activity-slider">
-            {/* ARROW LEFT */}
-            <button
-              className="activity-arrow activity-arrow-left"
-              aria-label="Previous"
-            >
-              ‹
-            </button>
-
-            {/* CARD 1 */}
-            <div className="activity-card activity-card-featured">
-              <div className="activity-card-image">
-                <img
-                  src={writeImage}
-                  alt="Tổ chức các bài thi quốc tế"
-                />
-              </div>
-
-              <div className="activity-card-content">
-                <span className="activity-card-number">01</span>
-
-                <h3>
-                  Tổ Chức Các Bài Thi
-                  <br />
-                  Quốc Tế
-                </h3>
-
-                <p>
-                  Là Đại diện quốc gia của các Tổ chức hàng đầu thế giới như
-                  Viện Khảo thí Giáo dục Hoa Kỳ (ETS), Tổ chức Khảo thí Tin học
-                  CERTIPORT, IIG Việt Nam được ủy quyền thực hiện các bài thi
-                  quốc tế uy tín về ngoại ngữ và tin học.
-                </p>
-
-                <button className="activity-read-more">
-                  Xem thêm
-                  <span>→</span>
-                </button>
-              </div>
-            </div>
-
-            {/* CARD 2 */}
-            <div className="activity-card activity-card-image-only">
-              <img
-                src={advisoryImage}
-                alt="Tư vấn các giải pháp giáo dục"
-              />
-
-              <div className="activity-card-overlay"></div>
-
-              <div className="activity-overlay-content">
-                <span className="activity-card-number">02</span>
-
-                <h3>
-                  Tư Vấn Các Giải Pháp
-                  <br />
-                  Giáo Dục
-                </h3>
-
-                <span className="activity-overlay-arrow">→</span>
-              </div>
-            </div>
-
-            {/* CARD 3 */}
-            <div className="activity-card activity-card-image-only">
-              <img src={trainingImage} alt="Đào tạo" />
-
-              <div className="activity-card-overlay"></div>
-
-              <div className="activity-overlay-content">
-                <span className="activity-card-number">03</span>
-
-                <h3>Đào Tạo</h3>
-
-                <span className="activity-overlay-arrow">→</span>
-              </div>
-            </div>
-
-            {/* ARROW RIGHT */}
-            <button
-              className="activity-arrow activity-arrow-right"
-              aria-label="Next"
-            >
-              ›
-            </button>
-          </div>
-
-          {/* PAGINATION */}
-          <div className="activity-pagination">
-            <span className="activity-dot"></span>
-
-            <span className="activity-dot active"></span>
-
-            <span className="activity-dot"></span>
-          </div>
-        </div>
-      </section>
+      <ActivitySection />
     </div>
   );
 }

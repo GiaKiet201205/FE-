@@ -3,6 +3,7 @@ import { Box, Container, Typography, Grid, Button } from "@mui/material";
 import HeroSection from "../components/home/HeroSection";
 import HeroBannerSlider from "../components/home/HeroBannerSlider";
 import StatsSection from "../components/home/StatsSection";
+import ActivitySection from "../components/about/ActivitySection";
 import RevealOnScroll from "../components/common/RevealOnScroll";
 import CourseCard from "../components/courses/CourseCard";
 import VisionMissionCard from "../components/about/VisionMissionCard";
@@ -104,6 +105,10 @@ export default function HomePage() {
             </Grid>
           </Grid>
         </Container>
+      </RevealOnScroll>
+
+      <RevealOnScroll>
+        <ActivitySection />
       </RevealOnScroll>
 
       <RevealOnScroll>
